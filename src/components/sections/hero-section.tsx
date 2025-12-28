@@ -1,7 +1,32 @@
+import { useGSAP } from "@gsap/react";
 import { words } from "../../constants";
 import { Button } from "../app/button";
+import { HeroExperience } from "../models/hero/hero-experience";
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
 
 export const HeroSection = () => {
+  useGSAP(() => {
+    const textSplit = new SplitText(".hero-text h1", {
+      type: "lines",
+    });
+
+    gsap.fromTo(
+      textSplit.lines,
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power1.inOut",
+      }
+    );
+  }, []);
+
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
@@ -15,9 +40,9 @@ export const HeroSection = () => {
                 将
                 <span className="slide">
                   <span className="wrapper">
-                    {words.map(word => (
+                    {words.map((word, index) => (
                       <span
-                        key={word.text}
+                        key={word.text + index}
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
                         <img
@@ -40,6 +65,11 @@ export const HeroSection = () => {
             <Button className="md:w-80 md:h-16 w-60 h-12" id="counter" />
           </div>
         </header>
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   );
