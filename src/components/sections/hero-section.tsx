@@ -4,6 +4,7 @@ import { Button } from "../app/button";
 import { HeroExperience } from "../models/hero/hero-experience";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { AnimateCounter } from "../app/animate-counter";
 
 export const HeroSection = () => {
   useGSAP(() => {
@@ -71,6 +72,7 @@ export const HeroSection = () => {
           </div>
         </figure>
       </div>
+      <AnimateCounter />
     </section>
   );
 };
