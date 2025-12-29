@@ -52,18 +52,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "品质至上",
-    desc: "专注细节与体验，交付具有可靠品质的成果。",
+    title: "专业前端",
+    desc: "熟练掌握现代技术栈，构建高性能与可维护的界面。",
   },
   {
     imgPath: "/images/chat.png",
-    title: "实时沟通",
-    desc: "透明、及时回应，项目进度全程可追踪。",
+    title: "交互体验",
+    desc: "注重用户体验与动效细节，让界面更生动、更易用。",
   },
   {
     imgPath: "/images/time.png",
-    title: "准时交付",
-    desc: "按计划完成项目，效率与质量并重。",
+    title: "性能优化",
+    desc: "持续优化加载速度与渲染表现，带来流畅的使用体验。",
   },
 ];
 
