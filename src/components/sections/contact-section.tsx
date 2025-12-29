@@ -1,15 +1,26 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { TitleHeader } from "../app/title-header";
 import { ContactExperience } from "../models/contact/contact-experience";
+import emailjs from "@emailjs/browser";
 
 export const ContactSection = () => {
   const [loading, setLoading] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null!);
 
-  const handleAction = (values: FormData) => {
-    setLoading(true);
-    const formObject = Object.fromEntries(values);
-    console.log("🚀 ~ handleAction ~ formObject:", formObject);
-    setLoading(false);
+  const handleAction = async () => {
+    try {
+      setLoading(true);
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      );
+    } catch (error) {
+      console.log("🚀 ~ handleAction ~ error:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -25,6 +36,7 @@ export const ContactSection = () => {
               <form
                 action={handleAction}
                 className="flex w-full flex-col gap-7"
+                ref={formRef}
               >
                 <div>
                   <label htmlFor="name">Your name</label>
