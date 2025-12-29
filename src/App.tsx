@@ -8,6 +8,7 @@ import { Navbar } from "./components/app/navbar";
 import { FeatureSection } from "./components/sections/feature-section";
 import { ExperienceSection } from "./components/sections/experience-section";
 import { TechStack } from "./components/sections/tech-stack";
+import { AboutMeSection } from "./components/sections/about-me-section";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -21,6 +22,7 @@ const App = () => {
       <FeatureSection />
       <ExperienceSection />
       <TechStack />
+      <AboutMeSection />
     </div>
   );
 };
