@@ -6,6 +6,7 @@ import { ShowcaseSection } from "./components/sections/showcase-section";
 import { Navbar } from "./components/app/navbar";
 // import { LogoSection } from "./components/sections/logo-section";
 import { FeatureSection } from "./components/sections/feature-section";
+import { ExperienceSection } from "./components/sections/experience-section";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -17,6 +18,7 @@ const App = () => {
       <ShowcaseSection />
       {/* <LogoSection /> */}
       <FeatureSection />
+      <ExperienceSection />
     </div>
   );
 };

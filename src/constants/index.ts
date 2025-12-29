@@ -126,39 +126,39 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Adrian 在团队中发挥了创造力与技术优势，为我们的前端性能带来了显著提升，他的贡献让产品体验更快、更稳定。",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "前端开发工程师",
+      "YXY 在团队中发挥了创造力与技术优势，为我们的前端性能带来了显著提升，他的贡献让产品体验更快、更稳定。",
+    imgPath: "/images/logos/dzjt1.png",
+    logoPath: "/images/logos/dzjt.png",
+    title: "全栈开发工程师",
     date: "2023年1月 - 至今",
     responsibilities: [
-      "负责 Hostinger 网站的前端功能开发与维护。",
+      "负责 德州交投 网站的前端功能开发与维护。",
       "与UI/UX团队紧密合作，实现一致且顺畅的用户体验。",
       "优化应用性能，提高访问速度与可扩展性。",
     ],
   },
   {
     review:
-      "Adrian 在 Docker 的项目中展现了优秀的全栈能力，他始终以解决问题为核心思路推动项目落地。",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "全栈开发工程师",
+      "YXY 在 Docker 的项目中展现了优秀的全栈能力，他始终以解决问题为核心思路推动项目落地。",
+    imgPath: "/images/logos/sdca1.png",
+    logoPath: "/images/logos/sdca.jpg",
+    title: "前端开发工程师",
     date: "2020年6月 - 2023年12月",
     responsibilities: [
-      "负责 Docker 多项 Web 应用的开发与扩展性设计。",
+      "负责 山东CA 多项 Web 应用的开发与扩展性设计。",
       "与后端团队协作，保证 API 与前端无缝衔接。",
-      "参与开源生态建设，贡献用于 Docker 系统的工具。",
+      "参与开源生态建设，贡献用于 山东CA 系统的工具。",
     ],
   },
   {
     review:
       "Adrian 主导的 Appwrite 移动端开发为产品带来更高质量与更快交付，他的解决方案有效支持了产品目标落地。",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native 开发",
+    imgPath: "/images/logos/sdqz1.png",
+    logoPath: "/images/logos/sdqz.png",
+    title: "前端开发工程师",
     date: "2019年3月 - 2020年5月",
     responsibilities: [
-      "基于 React Native 构建跨平台应用并接入后端服务。",
+      "基于 Vue.js 构建跨平台应用并接入后端服务。",
       "针对移动端性能进行优化与稳定性提升。",
       "根据团队反馈迭代功能并完善用户体验。",
     ],
