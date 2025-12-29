@@ -7,6 +7,7 @@ import { Navbar } from "./components/app/navbar";
 // import { LogoSection } from "./components/sections/logo-section";
 import { FeatureSection } from "./components/sections/feature-section";
 import { ExperienceSection } from "./components/sections/experience-section";
+import { TechStack } from "./components/sections/tech-stack";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -19,6 +20,7 @@ const App = () => {
       {/* <LogoSection /> */}
       <FeatureSection />
       <ExperienceSection />
+      <TechStack />
     </div>
   );
 };

@@ -69,54 +69,54 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React 前端开发",
+    name: "React",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python 自动化 / 开发",
+    name: "Python",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Node.js 后端开发",
+    name: "Node",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "交互式网页 / 3D开发",
+    name: "Three",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "项目管理 / Git",
+    name: "Git",
     imgPath: "/images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React 前端开发",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python 自动化 / 开发",
+    name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Node.js 后端开发",
+    name: "Node",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "3D / 交互式开发",
+    name: "Three",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "项目管理 / Git",
+    name: "Git",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
