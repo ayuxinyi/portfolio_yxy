@@ -10,6 +10,7 @@ import { ExperienceSection } from "./components/sections/experience-section";
 import { TechStack } from "./components/sections/tech-stack";
 import { AboutMeSection } from "./components/sections/about-me-section";
 import { ContactSection } from "./components/sections/contact-section";
+import { FooterSection } from "./components/sections/footer-section";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -25,6 +26,7 @@ const App = () => {
       <TechStack />
       <AboutMeSection />
       <ContactSection />
+      <FooterSection />
     </div>
   );
 };
